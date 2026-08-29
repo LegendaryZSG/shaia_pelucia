@@ -166,15 +166,16 @@ INSERT INTO categorias (nome, descricao) VALUES
 ('Fantasiosos', 'Pelúcias fantasiosas'),
 ('Raposa', 'Pelúcias de raposas'),
 ('Felinos', 'Pelúcias de felinos'),
-('Elefante', 'Pelúcias de elefante'),
-('Girafa', 'Pelúcias de girafas'),
-('Macaco', 'Pelúcias de primata'),
-('Guaxinim', 'Pelúcias de guaxinim'),
-('Panda', 'Pelúcias de pandas'),
-('Pinguim', 'Pelúcias de pinguins'),
-('Capivara', 'Pelúcias de capivaras'),
-('Preguiça', 'Pelúcias de preguiças'),
-('Foca', 'Pelúcias de foca');
+('Capivara', 'Pelúcias de capivaras')
+
+=====================================================================================
+-- ALTERAÇÕOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOES 28/08
+INSERT INTO categorias (nome, descricao) VALUES
+('Variedades Edição Limitada', 'Pelúcias Variadas'); --20 
+
+INSERT INTO categorias (nome, descricao) VALUES
+('Animais', 'Pelúcias de Animais'); --21
+====================================================================================
 
 INSERT INTO fornecedores (nome, cnpj, telefone, email, cidade, uf) VALUES
 ('Pelúcias Brasil Ltda', '12.345.678/0001-90', '(19) 3221-4455', 'contato@peluciasbrasil.com', 'Americana', 'SP'),
@@ -215,6 +216,7 @@ INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_cus
 ====================================================================================
 -- ALTERAÇÕOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOES 28/08
 
+-- GATOS
 INSERT INTO produtos (INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_custo, preco_venda, estoque_atual, estoque_minimo) VALUES
 ('Gato Branco', 3, 2, 'P', 'Branco', 22.00, 59.99, 30, 8),
 ('Gato Branco', 3, 2, 'M', 'Branco', 22.00, 79.99, 30, 8),
@@ -236,28 +238,244 @@ INSERT INTO produtos (INSERT INTO produtos (nome, id_categoria, id_fornecedor, t
 ('Gato Cinza', 3, 2, 'M', 'Cinza', 22.00, 49.99, 30, 8),
 ('Gato Cinza', 3, 2, 'G', 'Cinza', 22.00, 99.99, 30, 8);
 
+-- CACHORROS 
+('Cachorro Golden', 4, 2, 'P', 'Dourado', 22.00, 69.99, 30, 8),
+('Cachorro Golden', 4, 2, 'M', 'Dourado', 30.00, 99.99, 30, 8),
+('Cachorro Golden', 4, 2, 'G', 'Dourado', 50.00, 139.99, 30, 8),
 
+('Cachorro Salsicha', 4, 2, 'P', 'Marrom', 22.00, 34.99, 30, 8),
+('Cachorro Salsicha', 4, 2, 'M', 'Marrom', 30.00, 54.99, 30, 8),
+('Cachorro Salsicha', 4, 2, 'G', 'Marrom', 50.00, 74.99, 30, 8),
 
+('Cachorro Husky', 4, 2, 'P', 'Cinza e Branco', 22.00, 79.99, 30, 8),
+('Cachorro Husky', 4, 2, 'M', 'Cinza e Branco', 30.00, 109.99, 30, 8),
+('Cachorro Husky', 4, 2, 'G', 'Cinza e Branco', 50.00, 149.99, 30, 8),
 
+('Cachorro Pastor Alemão', 4, 2, 'P', 'Marrom e Preto', 22.00, 74.99, 30, 8),
+('Cachorro Pastor Alemão', 4, 2, 'M', 'Marrom e Preto', 30.00, 104.99, 30, 8),
+('Cachorro Pastor Alemão', 4, 2, 'G', 'Marrom e Preto', 50.00, 144.99, 30, 8),
 
+('Cachorro Pincher', 4, 2, 'P', 'Preto e Marrom', 22.00, 24.99, 30, 8),
+('Cachorro Pincher', 4, 2, 'M', 'Preto e Marrom', 30.00, 44.99, 30, 8),
+('Cachorro Pincher', 4, 2, 'G', 'Preto e Marrom', 50.00, 64.99, 30, 8),
 
+('Cachorro Dálmata', 4, 2, 'P', 'Branco e Preto', 22.00, 64.99, 30, 8),
+('Cachorro Dálmata', 4, 2, 'M', 'Branco e Preto', 30.00, 94.99, 30, 8),
+('Cachorro Dálmata', 4, 2, 'G', 'Branco e Preto', 50.00, 134.99, 30, 8);
 
+-- DINOSSAUROS 
+('Dinossauro T-Rex', 5, 2, 'P', 'Verde', 22.00, 54.99, 30, 8),
+('Dinossauro T-Rex', 5, 2, 'M', 'Verde', 22.00, 84.99, 30, 8),
+('Dinossauro T-Rex', 5, 2, 'G', 'Verde', 22.00, 124.99, 30, 8),
 
+('Dinossauro Tricerátops', 5, 2, 'P', 'Marrom', 22.00, 49.99, 30, 8),
+('Dinossauro Tricerátops', 5, 2, 'M', 'Marrom', 22.00, 79.99, 30, 8),
+('Dinossauro Tricerátops', 5, 2, 'G', 'Marrom', 22.00, 114.99, 30, 8),
 
+('Dinossauro Estegossauro', 5, 2, 'P', 'Verde e Amarelo', 22.00, 59.99, 30, 8),
+('Dinossauro Estegossauro', 5, 2, 'M', 'Verde e Amarelo', 22.00, 89.99, 30, 8),
+('Dinossauro Estegossauro', 5, 2, 'G', 'Verde e Amarelo', 22.00, 129.99, 30, 8),
 
+('Dinossauro Velociraptor', 5, 2, 'P', 'Azul', 22.00, 44.99, 30, 8),
+('Dinossauro Velociraptor', 5, 2, 'M', 'Azul', 22.00, 74.99, 30, 8),
+('Dinossauro Velociraptor', 5, 2, 'G', 'Azul', 22.00, 109.99, 30, 8),
 
+('Dinossauro Braquiossauro', 5, 2, 'P', 'Verde Claro', 22.00, 64.99, 30, 8),
+('Dinossauro Braquiossauro', 5, 2, 'M', 'Verde Claro', 22.00, 94.99, 30, 8),
+('Dinossauro Braquiossauro', 5, 2, 'G', 'Verde Claro', 22.00, 139.99, 30, 8),
 
+('Dinossauro Pterodáctilo', 5, 2, 'P', 'Roxo', 22.00, 39.99, 30, 8),
+('Dinossauro Pterodáctilo', 5, 2, 'M', 'Roxo', 22.00, 69.99, 30, 8),
+('Dinossauro Pterodáctilo', 5, 2, 'G', 'Roxo', 22.00, 99.99, 30, 8);
 
+-- BALEIA
+('Baleia Azul', 6, 2, 'P', 'Azul', 22.00, 59.99, 30, 8),
+('Baleia Azul', 6, 2, 'M', 'Azul', 22.00, 89.99, 30, 8),
+('Baleia Azul', 6, 2, 'G', 'Azul', 22.00, 129.99, 30, 8),
 
+('Baleia Jubarte', 6, 2, 'P', 'Cinza', 22.00, 64.99, 30, 8),
+('Baleia Jubarte', 6, 2, 'M', 'Cinza', 22.00, 94.99, 30, 8),
+('Baleia Jubarte', 6, 2, 'G', 'Cinza', 22.00, 134.99, 30, 8),
 
+('Baleia Orca', 6, 2, 'P', 'Preto e Branco', 22.00, 69.99, 30, 8),
+('Baleia Orca', 6, 2, 'M', 'Preto e Branco', 22.00, 99.99, 30, 8),
+('Baleia Orca', 6, 2, 'G', 'Preto e Branco', 22.00, 139.99, 30, 8);
 
+-- FANTASIOSOS
+('Unicórnio Mágico', 7, 2, 'P', 'Rosa e Branco', 22.00, 64.99, 30, 8),
+('Unicórnio Mágico', 7, 2, 'M', 'Rosa e Branco', 22.00, 94.99, 30, 8),
+('Unicórnio Mágico', 7, 2, 'G', 'Rosa e Branco', 22.00, 139.99, 30, 8),
 
+('Dragão Vermelho', 7, 2, 'P', 'Vermelho', 22.00, 69.99, 30, 8),
+('Dragão Vermelho', 7, 2, 'M', 'Vermelho', 22.00, 104.99, 30, 8),
+('Dragão Vermelho', 7, 2, 'G', 'Vermelho', 22.00, 149.99, 30, 8),
 
+('Fada Encantada', 7, 2, 'P', 'Rosa', 22.00, 54.99, 30, 8),
+('Fada Encantada', 7, 2, 'M', 'Rosa', 22.00, 84.99, 30, 8),
+('Fada Encantada', 7, 2, 'G', 'Rosa', 22.00, 119.99, 30, 8),
 
+('Gnomo Encantado', 7, 2, 'P', 'Verde e Vermelho', 22.00, 74.99, 30, 8),
+('Gnomo Encantado', 7, 2, 'M', 'Verde e Vermelho', 22.00, 109.99, 30, 8),
+('Gnomo Encantado', 7, 2, 'G', 'Verde e Vermelho', 22.00, 159.99, 30, 8),
 
+('Among Us Vermelho', 7, 2, 'P', 'Vermelho', 22.00, 54.99, 30, 8),
+('Among Us Vermelho', 7, 2, 'M', 'Vermelho', 22.00, 84.99, 30, 8),
+('Among Us Vermelho', 7, 2, 'G', 'Vermelho', 22.00, 119.99, 30, 8),
 
+('Among Us Ciano', 7, 2, 'P', 'Ciano', 22.00, 59.99, 30, 8),
+('Among Us Ciano', 7, 2, 'M', 'Ciano', 22.00, 89.99, 30, 8),
+('Among Us Ciano', 7, 2, 'G', 'Ciano', 22.00, 124.99, 30, 8),
 
+('Among Us Roxo', 7, 2, 'P', 'Roxo', 22.00, 64.99, 30, 8),
+('Among Us Roxo', 7, 2, 'M', 'Roxo', 22.00, 94.99, 30, 8),
+('Among Us Roxo', 7, 2, 'G', 'Roxo', 22.00, 129.99, 30, 8);
 
+-- RAPOSA
+('Raposa Branca', 8, 2, 'P', 'Branco', 22.00, 59.99, 30, 8),
+('Raposa Branca', 8, 2, 'M', 'Branco', 22.00, 89.99, 30, 8),
+('Raposa Branca', 8, 2, 'G', 'Branco', 22.00, 129.99, 30, 8),
+
+('Raposa Laranja', 8, 2, 'P', 'Laranja', 22.00, 64.99, 30, 8),
+('Raposa Laranja', 8, 2, 'M', 'Laranja', 22.00, 94.99, 30, 8),
+('Raposa Laranja', 8, 2, 'G', 'Laranja', 22.00, 134.99, 30, 8);
+
+-- FELINOS
+('Tigre', 9, 2, 'P', 'Laranja e Preto', 22.00, 64.99, 30, 8),
+('Tigre', 9, 2, 'M', 'Laranja e Preto', 22.00, 94.99, 30, 8),
+('Tigre', 9, 2, 'G', 'Laranja e Preto', 22.00, 134.99, 30, 8),
+
+('Leão', 9, 2, 'P', 'Dourado', 22.00, 69.99, 30, 8),
+('Leão', 9, 2, 'M', 'Dourado', 22.00, 99.99, 30, 8),
+('Leão', 9, 2, 'G', 'Dourado', 22.00, 139.99, 30, 8),
+
+('Pantera', 9, 2, 'P', 'Preto', 22.00, 59.99, 30, 8),
+('Pantera', 9, 2, 'M', 'Preto', 22.00, 89.99, 30, 8),
+('Pantera', 9, 2, 'G', 'Preto', 22.00, 129.99, 30, 8),
+
+('Onça', 9, 2, 'P', 'Amarelo e Preto', 22.00, 74.99, 30, 8),
+('Onça', 9, 2, 'M', 'Amarelo e Preto', 22.00, 104.99, 30, 8),
+('Onça', 9, 2, 'G', 'Amarelo e Preto', 22.00, 144.99, 30, 8);
+
+-- CAPIVARAS
+('Capivara com Boné', 16, 2, 'P', 'Marrom', 22.00, 59.99, 30, 8),
+('Capivara com Boné', 16, 2, 'M', 'Marrom', 22.00, 89.99, 30, 8),
+('Capivara com Boné', 16, 2, 'G', 'Marrom', 22.00, 129.99, 30, 8),
+
+('Capivara com Óculos', 16, 2, 'P', 'Marrom', 22.00, 64.99, 30, 8),
+('Capivara com Óculos', 16, 2, 'M', 'Marrom', 22.00, 94.99, 30, 8),
+('Capivara com Óculos', 16, 2, 'G', 'Marrom', 22.00, 134.99, 30, 8),
+
+('Capivara com Chapéu', 16, 2, 'P', 'Marrom', 22.00, 69.99, 30, 8),
+('Capivara com Chapéu', 16, 2, 'M', 'Marrom', 22.00, 99.99, 30, 8),
+('Capivara com Chapéu', 16, 2, 'G', 'Marrom', 22.00, 139.99, 30, 8),
+
+('Capivara com Boia de Pato', 16, 2, 'P', 'Marrom', 22.00, 69.99, 30, 8),
+('Capivara com Boia de Pato', 16, 2, 'M', 'Marrom', 22.00, 99.99, 30, 8),
+('Capivara com Boia de Pato', 16, 2, 'G', 'Marrom', 22.00, 139.99, 30, 8),
+
+('Capivara com Maça na Cabeça', 16, 2, 'P', 'Marrom', 22.00, 74.99, 30, 8),
+('Capivara com Maça na Cabeça', 16, 2, 'M', 'Marrom', 22.00, 104.99, 30, 8),
+('Capivara com Maça na Cabeça', 16, 2, 'G', 'Marrom', 22.00, 144.99, 30, 8);
+
+-- ANIMAIS
+('Foca', 21, 2, 'P', 'Cinza', 22.00, 54.99, 30, 8),
+('Foca', 21, 2, 'M', 'Cinza', 22.00, 84.99, 30, 8),
+('Foca', 21, 2, 'G', 'Cinza', 22.00, 124.99, 30, 8),
+
+('Elefante', 21, 2, 'P', 'Cinza', 22.00, 64.99, 30, 8),
+('Elefante', 21, 2, 'M', 'Cinza', 22.00, 94.99, 30, 8),
+('Elefante', 21, 2, 'G', 'Cinza', 22.00, 139.99, 30, 8),
+
+('Girafa', 21, 2, 'P', 'Amarelo e Marrom', 22.00, 69.99, 30, 8),
+('Girafa', 21, 2, 'M', 'Amarelo e Marrom', 22.00, 99.99, 30, 8),
+('Girafa', 21, 2, 'G', 'Amarelo e Marrom', 22.00, 144.99, 30, 8),
+
+('Macaco', 21, 2, 'P', 'Marrom', 22.00, 49.99, 30, 8),
+('Macaco', 21, 2, 'M', 'Marrom', 22.00, 79.99, 30, 8),
+('Macaco', 21, 2, 'G', 'Marrom', 22.00, 114.99, 30, 8),
+
+('Guaxinim', 21, 2, 'P', 'Cinza e Preto', 22.00, 59.99, 30, 8),
+('Guaxinim', 21, 2, 'M', 'Cinza e Preto', 22.00, 89.99, 30, 8),
+('Guaxinim', 21, 2, 'G', 'Cinza e Preto', 22.00, 129.99, 30, 8),
+
+('Preguiça', 21, 2, 'P', 'Marrom e Bege', 22.00, 64.99, 30, 8),
+('Preguiça', 21, 2, 'M', 'Marrom e Bege', 22.00, 94.99, 30, 8),
+('Preguiça', 21, 2, 'G', 'Marrom e Bege', 22.00, 134.99, 30, 8),
+
+('Pinguim', 21, 2, 'P', 'Preto e Branco', 22.00, 54.99, 30, 8),
+('Pinguim', 21, 2, 'M', 'Preto e Branco', 22.00, 84.99, 30, 8),
+('Pinguim', 21, 2, 'G', 'Preto e Branco', 22.00, 119.99, 30, 8),
+
+('Coala', 21, 2, 'P', 'Cinza', 22.00, 59.99, 30, 8),
+('Coala', 21, 2, 'M', 'Cinza', 22.00, 89.99, 30, 8),
+('Coala', 21, 2, 'G', 'Cinza', 22.00, 129.99, 30, 8),
+
+('Canguru', 21, 2, 'P', 'Marrom', 22.00, 64.99, 30, 8),
+('Canguru', 21, 2, 'M', 'Marrom', 22.00, 94.99, 30, 8),
+('Canguru', 21, 2, 'G', 'Marrom', 22.00, 139.99, 30, 8),
+
+('Hipopótamo', 21, 2, 'P', 'Rosa e Cinza', 22.00, 69.99, 30, 8),
+('Hipopótamo', 21, 2, 'M', 'Rosa e Cinza', 22.00, 99.99, 30, 8),
+('Hipopótamo', 21, 2, 'G', 'Rosa e Cinza', 22.00, 144.99, 30, 8);
+
+-- VARIEDADES
+('Mario', 20, 2, 'P', 'Vermelho e Azul', 22.00, 59.99, 30, 8),
+('Mario', 20, 2, 'M', 'Vermelho e Azul', 22.00, 89.99, 30, 8),
+('Mario', 20, 2, 'G', 'Vermelho e Azul', 22.00, 129.99, 30, 8),
+
+('Sonic', 20, 2, 'P', 'Azul', 22.00, 64.99, 30, 8),
+('Sonic', 20, 2, 'M', 'Azul', 22.00, 94.99, 30, 8),
+('Sonic', 20, 2, 'G', 'Azul', 22.00, 134.99, 30, 8),
+
+('Stitch', 20, 2, 'P', 'Azul', 22.00, 69.99, 30, 8),
+('Stitch', 20, 2, 'M', 'Azul', 22.00, 99.99, 30, 8),
+('Stitch', 20, 2, 'G', 'Azul', 22.00, 139.99, 30, 8),
+
+('Bob Esponja', 20, 2, 'P', 'Amarelo', 22.00, 54.99, 30, 8),
+('Bob Esponja', 20, 2, 'M', 'Amarelo', 22.00, 84.99, 30, 8),
+('Bob Esponja', 20, 2, 'G', 'Amarelo', 22.00, 124.99, 30, 8),
+
+('Pikachu', 20, 2, 'P', 'Amarelo', 22.00, 64.99, 30, 8),
+('Pikachu', 20, 2, 'M', 'Amarelo', 22.00, 94.99, 30, 8),
+('Pikachu', 20, 2, 'G', 'Amarelo', 22.00, 134.99, 30, 8),
+
+('Totoro', 20, 2, 'P', 'Cinza', 22.00, 69.99, 30, 8),
+('Totoro', 20, 2, 'M', 'Cinza', 22.00, 99.99, 30, 8),
+('Totoro', 20, 2, 'G', 'Cinza', 22.00, 139.99, 30, 8),
+
+('Homer Simpson', 20, 2, 'P', 'Amarelo', 22.00, 59.99, 30, 8),
+('Homer Simpson', 20, 2, 'M', 'Amarelo', 22.00, 89.99, 30, 8),
+('Homer Simpson', 20, 2, 'G', 'Amarelo', 22.00, 129.99, 30, 8),
+
+('Harry Potter', 20, 2, 'P', 'Preto', 22.00, 74.99, 30, 8),
+('Harry Potter', 20, 2, 'M', 'Preto', 22.00, 104.99, 30, 8),
+('Harry Potter', 20, 2, 'G', 'Preto', 22.00, 144.99, 30, 8),
+
+('Deadpool', 20, 2, 'P', 'Vermelho e Preto', 22.00, 79.99, 30, 8),
+('Deadpool', 20, 2, 'M', 'Vermelho e Preto', 22.00, 109.99, 30, 8),
+('Deadpool', 20, 2, 'G', 'Vermelho e Preto', 22.00, 149.99, 30, 8),
+
+('Minecraft Creeper', 20, 2, 'P', 'Verde', 22.00, 64.99, 30, 8),
+('Minecraft Creeper', 20, 2, 'M', 'Verde', 22.00, 94.99, 30, 8),
+('Minecraft Creeper', 20, 2, 'G', 'Verde', 22.00, 134.99, 30, 8),
+
+('Freddy', 20, 2, 'P', 'Marrom', 22.00, 69.99, 30, 8),
+('Freddy', 20, 2, 'M', 'Marrom', 22.00, 99.99, 30, 8),
+('Freddy', 20, 2, 'G', 'Marrom', 22.00, 139.99, 30, 8),
+
+('Foxy', 20, 2, 'P', 'Vermelho', 22.00, 64.99, 30, 8),
+('Foxy', 20, 2, 'M', 'Vermelho', 22.00, 94.99, 30, 8),
+('Foxy', 20, 2, 'G', 'Vermelho', 22.00, 134.99, 30, 8);
+
+('Cuphead', 20, 2, 'P', 'Vermelho e Preto', 22.00, 64.99, 30, 8),
+('Cuphead', 20, 2, 'M', 'Vermelho e Preto', 22.00, 94.99, 30, 8),
+('Cuphead', 20, 2, 'G', 'Vermelho e Preto', 22.00, 134.99, 30, 8),
+
+('Relâmpago McQueen', 20, 2, 'P', 'Vermelho', 22.00, 69.99, 30, 8),
+('Relâmpago McQueen', 20, 2, 'M', 'Vermelho', 22.00, 99.99, 30, 8),
+('Relâmpago McQueen', 20, 2, 'G', 'Vermelho', 22.00, 139.99, 30, 8);
+
+========================================================================
 INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_custo, preco_venda, estoque_atual, estoque_minimo) VALUES
 ('Gato Persa Fofinho', 3, 2, 'P', 'Cinza', 18.00, 39.90, 25, 5),
 ('Cachorro Golden', 4, 1, 'M', 'Dourado', 25.00, 54.90, 15, 5),
