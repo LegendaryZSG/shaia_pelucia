@@ -212,6 +212,52 @@ INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_cus
 ('Coelho Tricolor', 2, 1, 'M', 'Branco, Preto e Marrom', 22.00, 59.99, 30, 8),
 ('Coelho Tricolor', 2, 1, 'P', 'Branco, Preto e Marrom', 22.00, 39.99, 30, 8);
 
+====================================================================================
+-- ALTERAÇÕOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOES 28/08
+
+INSERT INTO produtos (INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_custo, preco_venda, estoque_atual, estoque_minimo) VALUES
+('Gato Branco', 3, 2, 'P', 'Branco', 22.00, 59.99, 30, 8),
+('Gato Branco', 3, 2, 'M', 'Branco', 22.00, 79.99, 30, 8),
+('Gato Branco', 3, 2, 'G', 'Branco', 22.00, 99.99, 30, 8),
+
+('Gato Frajola', 3, 2, 'P', 'Branco e Preto', 22.00, 59.99, 30, 8),
+('Gato Frajola', 3, 2, 'M', 'Branco e Preto', 22.00, 89.99, 30, 8),
+('Gato Frajola', 3, 2, 'G', 'Branco e Preto', 22.00, 119.99, 30, 8),
+
+('Gato Laranja', 3, 2, 'P', 'Laranja', 22.00, 29.99, 30, 8),
+('Gato Laranja', 3, 2, 'M', 'Laranja', 22.00, 69.99, 30, 8),
+('Gato Laranja', 3, 2, 'G', 'Laranja', 22.00, 109.99, 30, 8),
+
+('Gato Preto', 3, 2, 'P', 'Preto', 22.00, 59.99, 30, 8),
+('Gato Preto', 3, 2, 'M', 'Preto', 22.00, 79.99, 30, 8),
+('Gato Preto', 3, 2, 'G', 'Preto', 22.00, 109.99, 30, 8),
+
+('Gato Cinza', 3, 2, 'P', 'Cinza', 22.00, 39.99, 30, 8),
+('Gato Cinza', 3, 2, 'M', 'Cinza', 22.00, 49.99, 30, 8),
+('Gato Cinza', 3, 2, 'G', 'Cinza', 22.00, 99.99, 30, 8);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 INSERT INTO produtos (nome, id_categoria, id_fornecedor, tamanho, cor, preco_custo, preco_venda, estoque_atual, estoque_minimo) VALUES
 ('Gato Persa Fofinho', 3, 2, 'P', 'Cinza', 18.00, 39.90, 25, 5),
 ('Cachorro Golden', 4, 1, 'M', 'Dourado', 25.00, 54.90, 15, 5),
@@ -271,7 +317,7 @@ select * from itens_pedido;
 select * from clientes;
 
 -- ===========================================================================================
--- ALTERAÇOES 
+-- ALTERAÇOES !!
 ALTER TABLE produtos ADD COLUMN imagem VARCHAR(150);
 SELECT * FROM produtos;   
 
